@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CookingSchoolManagement.Models
 {
-    class StudentCourse
+    public class StudentCourse
     {
         [ForeignKey("Student")]
         public int StudentID { get; set; }

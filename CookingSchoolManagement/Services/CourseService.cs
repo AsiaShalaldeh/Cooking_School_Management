@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace CookingSchoolManagement.Services
 {
-    class CourseService : ICourseService
+    public class CourseService : ICourseService
     {
         private readonly SchoolContext _context;
         public CourseService(SchoolContext context)
@@ -20,7 +20,6 @@ namespace CookingSchoolManagement.Services
 
         public IEnumerable<Course> GetCourses()
         {
-            Console.WriteLine("From Courses");
             try
             {
                 return _context.Courses.ToList();

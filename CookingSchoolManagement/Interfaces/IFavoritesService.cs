@@ -1,10 +1,12 @@
-﻿using System;
+﻿using CookingSchoolManagement.Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace CookingSchoolManagement.Interfaces
 {
-    class IFavoritesService
+    public interface IFavoritesService
     {
+        IEnumerable<Favorites> GetFavorites();
     }
 }

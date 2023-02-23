@@ -6,7 +6,7 @@ using System.Text;
 
 namespace CookingSchoolManagement.Models
 {
-    class Course
+    public class Course
     {
         [Key]
         public int ID { get; set; }

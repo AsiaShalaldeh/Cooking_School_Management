@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CookingSchoolManagement.Interfaces
 {
-    interface IStudentService
+    public interface IStudentService
     {
         ResponseModel Login(string email, string password);
         ResponseModel Logout();
@@ -15,6 +15,7 @@ namespace CookingSchoolManagement.Interfaces
         Task<Meal> GetMealByName(string meal_name);
         Task<IEnumerable<Meal>> GetMealsByFirstLetter(char first_letter);
         Task<Meal> GetRandomMeal();
+        IEnumerable<Student> GetStudents();
         ResponseModel AddMealToFavorites(int student_id, int meal_id);
         Task<IEnumerable<Meal>> FilterMealsByCategory(string category);
         Task<IEnumerable<Meal>> FilterMealsByArea(string area);

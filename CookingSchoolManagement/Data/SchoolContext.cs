@@ -7,7 +7,7 @@ using System.Text;
 
 namespace CookingSchoolManagement.Data
 {
-    class SchoolContext : DbContext
+    public class SchoolContext : DbContext
     {
         protected readonly IConfiguration Configuration;
 

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CookingSchoolManagement.Models
 {
-    class Favorites
+    public class Favorites
     {
         [Required]
         public int MealID { get; set; }

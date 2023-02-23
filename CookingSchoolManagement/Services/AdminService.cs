@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace CookingSchoolManagement.Services
 {
-    class AdminService : IAdminService
+    public class AdminService : IAdminService
     {
         private readonly SchoolContext _context;
         public AdminService(SchoolContext context)

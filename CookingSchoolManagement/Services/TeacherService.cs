@@ -9,7 +9,7 @@ using System.Text;
 
 namespace CookingSchoolManagement.Services
 {
-    class TeacherService : ITeacherService
+    public class TeacherService : ITeacherService
     {
         private readonly SchoolContext _context;
         public TeacherService(SchoolContext context)
@@ -101,6 +101,19 @@ namespace CookingSchoolManagement.Services
                 model.Messsage = "Error : " + ex.Message;
             }
             return model;
+        }
+
+        public IEnumerable<Teacher> GetTeachers()
+        {
+            try
+            {
+                return _context.Teachers.ToList();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            return null;
         }
 
         public ResponseModel Login(string email, string password)

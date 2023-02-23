@@ -1,11 +1,13 @@
-﻿using System;
+﻿using CookingSchoolManagement.Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace CookingSchoolManagement.Interfaces
 {
-    class IClassService
+    public interface IClassService
     {
+        IEnumerable<Class> GetClasses();
 
     }
 }

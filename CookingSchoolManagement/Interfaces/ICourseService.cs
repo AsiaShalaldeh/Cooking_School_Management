@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CookingSchoolManagement.Interfaces
 {
-    interface ICourseService
+    public interface ICourseService
     {
         IEnumerable<Course> GetCourses();
     }

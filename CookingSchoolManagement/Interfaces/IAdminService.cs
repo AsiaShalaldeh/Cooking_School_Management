@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CookingSchoolManagement.Interfaces
 {
-    interface IAdminService
+    public interface IAdminService
     {
         ResponseModel Login(string email, string password);
         ResponseModel Logout();
